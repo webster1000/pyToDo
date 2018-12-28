@@ -1,3 +1,5 @@
+#a command-line to-do app by Zack Webster
+
 tasks = []
 choice = ''
 
@@ -38,6 +40,6 @@ while choice != 0:
 				else:
 					print("Removed task: "+ tasks[int(index)-1])
 					del tasks[int(index)-1]
-					break
+					break #stop loop with a break after removing the task since in range (1,1) == False after removing the last task.
 	else:
 		print("Error: Enter a valid choice.")
